@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси</title>
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body>
+<body class="catalog-page">
   <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" hfer="#">
-            <img class="navigation-logo">
+            <img class="navigation-logo" src="../images/logo/logo.svg" width="137" height="156" alt="Логотип Gllacy Shop.">
           </a>
         </li>
         <li class="navigation-item">
@@ -39,7 +40,7 @@
           <a class="navigation-link" href="#"> Вход</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Пусто
+          <a class="navigation-link" href="#">2 товара
             <span class="visually-hidden">Корзина.</span>
           </a>
         </li>
@@ -63,10 +64,14 @@
     <section class="catalog-products">
       <h2 class="visually-hidden">Фильтры для выбора мороженого.</h2>
       <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
-        <select class="select-control" aria-label="Сортировка.">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Сортировка:</legend>
+        <select class="select-control">
           <option value="popular">по популярности</option>
           <option value="popular">по цене</option>
         </select>
+
+        </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность:</legend>
           <ul class="catalog-filter-list">
@@ -126,7 +131,7 @@
       </form>
       <ul class="product-list">
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик малинового мороженого.">
+          <img class="item-image" src="../images/products/raspberry.jpg" width="168" height="168" alt="Шарик малинового мороженого.">
           <h3 class="item-title">Малинка</h3>
           <p class="item-description">Сливочное мороженое с малиновым джемом</p>
           <span class="item-price">310 р/кг</span>
@@ -136,7 +141,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик фисташкового мороженого.">
+          <img class="item-image" src="../images/products/pistachio.jpg" width="168" height="168" alt="Шарик фисташкового мороженого.">
           <h3 class="item-title">Фисташка</h3>
           <p class="item-description">Фисташковый пломбир с кусочками шоколада</p>
           <span class="item-price">340 р/кг</span>
@@ -146,7 +151,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик черничного мороженого.">
+          <img class="item-image" src="../images/products/blueberry.jpg" width="168" height="168" alt="Шарик черничного мороженого.">
           <h3 class="item-title">Черника</h3>
           <p class="item-description">Крем-брюле с черничным джемом</p>
           <span class="item-price">330 р/кг</span>
@@ -156,7 +161,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик мороженого с посыпкой.">
+          <img class="item-image" src="../images/products/bubble-gum.jpg" width="168" height="168" alt="Шарик мороженого с посыпкой.">
           <h3 class="item-title">Бабл-гам</h3>
           <p class="item-description">Ванильный пломбир со сладкой посыпкой</p>
           <span class="item-price">310 р/кг</span>
@@ -166,7 +171,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик мороженого с ежевичным джемом.">
+          <img class="item-image" src="../images/products/blackberry.jpg" width="168" height="168" alt="Шарик мороженого с ежевичным джемом.">
           <h3 class="item-title">Ежевика</h3>
           <p class="item-description">Сливочное мороженое с ежевичным джемом</p>
           <span class="item-price">330 р/кг</span>
@@ -176,7 +181,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик бананового мороженого.">
+          <img class="item-image" src="../images/products/banana.jpg" width="168" height="168" alt="Шарик бананового мороженого.">
           <h3 class="item-title">Банан</h3>
           <p class="item-description">Сливочный пломбир
             с банановым вкусом</p>
@@ -187,7 +192,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик шоколадного мороженого.">
+          <img class="item-image" src="../images/products/chocolate.jpg" width="168" height="168" alt="Шарик шоколадного мороженого.">
           <h3 class="item-title">Шоколадка</h3>
           <p class="item-description">Классический шоколадный пломбир</p>
           <span class="item-price">270 р/кг</span>
@@ -197,7 +202,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик клубничного мороженого.">
+          <img class="item-image" src="../images/products/strawberry.jpg" width="168" height="168" alt="Шарик клубничного мороженого.">
           <h3 class="item-title">Клубничка</h3>
           <p class="item-description">Сливочный пломбир
             с клубничным вкусом</p>
@@ -208,7 +213,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик лимонного сорбета.">
+          <img class="item-image" src="../images/products/lemon.jpg" width="168" height="168" alt="Шарик лимонного сорбета.">
           <h3 class="item-title">Лимон</h3>
           <p class="item-description">Освежающий лимонный сорбет</p>
           <span class="item-price">310 р/кг</span>
@@ -218,7 +223,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик мороженого с ментоловым сиропом.">
+          <img class="item-image" src="../images/products/mentol.jpg" width="168" height="168" alt="Шарик мороженого с ментоловым сиропом.">
           <h3 class="item-title">Ментол</h3>
           <p class="item-description">Сливочный пломбир
             с ментоловым сиропом</p>
@@ -229,7 +234,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик фисташкового мороженого.">
+          <img class="item-image" src="../images/products/nutlet.jpg" width="168" height="168" alt="Шарик фисташкового мороженого.">
           <h3 class="item-title">Орешек</h3>
           <p class="item-description">Фисташковый пломбир с шоколадным сиропом</p>
           <span class="item-price">360 р/кг</span>
@@ -239,7 +244,7 @@
           </div>
         </li>
         <li class="product-card">
-          <img class="item-image" src="" alt="Шарик мороженого крем-брюле.">
+          <img class="item-image" src="../images/products/creme-brulee.jpg" width="168" height="168" alt="Шарик мороженого крем-брюле.">
           <h3 class="item-title">Крем-брюле</h3>
           <p class="item-description">Классическое крем-брюле </p>
           <span class="item-price">280 р/кг</span>

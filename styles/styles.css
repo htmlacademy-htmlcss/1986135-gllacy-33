@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-page,
+.catalog-page {
+  background-color: #FEAFC3;
+}
+
+.page-second {
+  background-color: #69A9FF;
+}
+
+.page-third {
+  background-color: #FCC850;
+}
+
+.navigation-link {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header-contacts-phone {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ice-cream-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.ice-cream-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.social-link svg {
+  fill: #FCFCFC;
+}
+
+.banner-intro {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.banner {
+  width: 570px;
+  background: #FF7799;
+  border-radius: 16px;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.banner-description {
+  text-align: left;
+}
+
+.popular-intro {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.item-description {}
+
+.item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.news-blog-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.news-blog-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+
+}
+
+.newsletter-description {
+  color: #565C66;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.form-description {
+  color: #565C66;
+}
+
+.form-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts-subtitle {
+  color: #565C66;
+}
+
+.contacts-adress {
+  font-style: normal;
+}
+
+.contacts-adress-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contacts-phone-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.information-link {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.information-link-favour {
+  font-family: inherit;
+  font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+color: inherit;
+}
+
+.html-academy-link {
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+line-height: 16px;
+}
+
+.copyright-link {
+  font-family: inherit;
+  font-size: 12px;
+line-height: 16px;
+color: #2D3440;
+border-bottom:1px solid rgba(45,52,64, 0.3);
+text-decoration: none;
+}
+
+.breadcrumps-link {
+  font-family: inherit;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+color: inherit;
+text-decoration: none;
+}
+
+.inner-header-title {
+  font-weight: 900;
+font-size: 32px;
+line-height: 46px;
+}
+
+.catalog-filter-title {
+  font-size: 14px;
+line-height: 20px;
+}
+
+.control {
+  font-size: 14px;
+line-height: 20px;
+}
+
+.pagination-link {
+  font-family: inherit;
+  font-size: 14px;
+line-height: 20px;
+color: inherit;
+text-decoration: none;
+}
