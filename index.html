@@ -16,7 +16,7 @@
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" hrf="catalog.html">Каталог</a>
+          <a class="navigation-link" href="catalog.html">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
@@ -26,10 +26,10 @@
         </li>
       </ul>
       <div class="nav-header-phone">
-          <span class="visually-hidden">Позвоните нам.</span>
-          <a class="header-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        </div>
-        <ul class="navigation-list navigation-user">
+        <span class="visually-hidden">Позвоните нам.</span>
+        <a class="header-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      </div>
+      <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link link-search" href="#">
             <span class="visually-hidden">Поиск.</span>
@@ -58,14 +58,14 @@
             <a class="order-button" href="index/catalog.html">Заказать</a>
           </div>
           <div class="slider">
-            <button class="slider-button slider-prev" type="button">
+            <!-- <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущее мороженое</span>
-            </button>
+            </button> -->
             <img class="slider-image" src="images/products/main-slider-1.png" width="312" height="507"
               alt="Нежный пломбир с клубничным джемом.">
-            <button class="slider-button slider-next" type="button">
+            <!-- <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующее мороженое</span>
-            </button>
+            </button> -->
             <img class="slider-image-next" src="images/products/slide-next-banana.png" width="100" height="150"
               alt="Следующее мороженое">
             <img class="slider-image-next" src="images/products/slide-next-caramel.png" width="100" height="150"
@@ -80,12 +80,12 @@
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">2 фото мороженого</span>
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">3 фото мороженого</span>
               </button>
             </li>
@@ -134,7 +134,7 @@
               малинового
               варенья бесплатно.</p>
             <a class="favour-button" href="catalog.html">Хочу подарок</a>
-            <img class="banner-picture" src="images/products/raspberry.png" width="181" height="212"
+            <img class="banner-picture" src="images/products/raspberry.png" width="181" height="244"
               alt="Малина в вафельном рожке.">
           </div>
           <div class="banner right-banner">
@@ -143,7 +143,7 @@
               совершенно
               бесплатно.</p>
             <a class="favour-button" href="catalog.html">Хочу подарок</a>
-            <img class="banner-picture" src="images/products/marshmellow.png" width="232" height="230"
+            <img class="banner-picture" src="images/products/marshmellow.png" width="232" height="249"
               alt="Маршмеллоу в вафельном рожке.">
           </div>
         </div>
@@ -206,38 +206,41 @@
         </ul>
       </section>
       <section class="advantages-container">
-        <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
-          проиводства на развес</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <img class="advantages-image" src="images/icons/icecream-icon.svg" width="48" height="48"
-              alt="Схематичное изображение мороженого.">
-            <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с
-              использованием современного оборудования и проверенных временем технологий.</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-image" src="images/icons/leaf-icon.svg" width="48" height="48"
-              alt="Схематичное изображение листа.">
-            <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
-              качества. Все ингредиенты
-              и добавки произведены из натурального сырья.</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-image" src="images/icons/cow-icon.svg" width="48" height="48"
-              alt="Схематичное изображение головы коровы.">
-            <p class="advantages-description">Закупка ингредиентов производится только
-              у проверенных фермерских хозяйств, с которыми
-              нас связывает долговременное сотрудничество.</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages-image" src="images/icons/thermometer.svg" width="48" height="48"
-              alt="Схематичное изображение термометра.">
-            <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который
-              не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
-          </li>
+        <div class="advantages-wrapper">
+          <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
+            проиводства на развес</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <img class="advantages-image" src="images/icons/icecream-icon.svg" width="48" height="48"
+                alt="Схематичное изображение мороженого.">
+              <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с
+                использованием современного оборудования и проверенных временем технологий.</p>
+            </li>
 
-        </ul>
+            <li class="advantages-item">
+              <img class="advantages-image" src="images/icons/cow-icon.svg" width="48" height="48"
+                alt="Схематичное изображение головы коровы.">
+              <p class="advantages-description">Закупка ингредиентов производится только
+                у проверенных фермерских хозяйств, с которыми
+                нас связывает долговременное сотрудничество.</p>
+            </li>
+            <li class="advantages-item">
+              <img class="advantages-image" src="images/icons/leaf-icon.svg" width="48" height="48"
+                alt="Схематичное изображение листа.">
+              <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
+                качества. Все ингредиенты
+                и добавки произведены из натурального сырья.</p>
+            </li>
+            <li class="advantages-item">
+              <img class="advantages-image" src="images/icons/thermometer.svg" width="48" height="48"
+                alt="Схематичное изображение термометра.">
+              <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке,
+                который
+                не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+            </li>
 
+          </ul>
+        </div>
       </section>
       <section class="news-container">
         <div class="news-blog">
