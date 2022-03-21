@@ -38,13 +38,49 @@
           <a class="navigation-link search-link" href="#">
             <span class="visually-hidden">Поиск.</span>
           </a>
+          <div class="popover popover-search">
+            <div class="popover-content">
+              <h2 class="visually-hidden">Поиск по сайту.</h2>
+              <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="search-field field" type="search" placeholder="Поиск по сайту">
+            </form>
+            <span class="search-pointer"></span>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link log-in-link" href="#"> Вход</a>
+          <div class="popover popover-auth">
+            <div class="popover-content">
+              <h2 class="popover-title">Личный кабинет</h2>
+              <form class="popover-auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group">
+                  <label class="visually-hidden" for="auth-email">Email.</label>
+                  <input class="auth-form-field field" type="email" id="auth-email" name="auth-email" placeholder="email@example.com">
+                </p>
+                <p class="field-group">
+                  <label class="visually-hidden" for="auth-password">Пароль.</label>
+                  <input class="auth-form-field field" type="password" name="auth-password" id="auth-password" placeholder="Пароль">
+                </p>
+                <div class="auth-form-user-options-wrapper">
+                <button class="button-pink auth-form-button" type="submit">Войти</button>
+                <p class="field-group auth-form-user-options">
+                <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                <a class="auth-form-registration" href="#">Регистрация</a>
+              </p>
+              </div>
+              </form>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link basket-link" href="#">Пусто
             <span class="visually-hidden">Корзина.</span>
+            <div class="popover popover-empty-cart">
+              <div class="popover-content">
+                <h2 class="popover-title">Ваша корзина пока пуста</h2>
+              </div>
+            </div>
           </a>
         </li>
       </ul>
@@ -59,7 +95,7 @@
             <h2 class="ice-cream-title">Нежный пломбир с&nbsp;клубничным джемом</h2>
             <p class="ice-cream-description">Натуральное мороженое из свежих сливок
               и&nbsp;молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-            <a class="order-button" href="index/catalog.html">Заказать</a>
+            <a class="button-light order-button" href="index/catalog.html">Заказать</a>
           </div>
           <div class="slider">
             <button class="slider-button slider-prev-button" type="button">
@@ -149,7 +185,7 @@
             <p class="banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового
               варенья бесплатно.</p>
-            <a class="favour-button" href="catalog.html">Хочу подарок</a>
+            <a class="button-light favour-button" href="catalog.html">Хочу подарок</a>
             <img class="banner-picture" src="images/products/raspberry.png" width="181" height="244"
               alt="Малина в вафельном рожке.">
           </div>
@@ -158,7 +194,7 @@
             <p class="banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
               совершенно
               бесплатно.</p>
-            <a class="favour-button" href="catalog.html">Хочу подарок</a>
+            <a class="button-light favour-button" href="catalog.html">Хочу подарок</a>
             <img class="banner-picture" src="images/products/marshmellow.png" width="232" height="249"
               alt="Маршмеллоу в вафельном рожке.">
           </div>
@@ -227,7 +263,7 @@
               <span class="item-price">320 ₽/кг</span>
               <div class="basket">
                 <span class="visually-hidden">Положить в корзину.</span>
-                <button class="product-basket-button" type="button" disabled>
+                <button class="product-basket-button" type="button">
                   <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
                     </svg>
@@ -290,7 +326,7 @@
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
                 id="newsletter-email" aria-label="Введите Ваш e-mail.">
-              <button class="newsletter-button" type="submit">Отправить</button>
+              <button class="button-pink newsletter-button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -321,7 +357,7 @@
                 placeholder="ул. Большая Конюшенная, 19/8">
             </p>
             </div>
-            <button class="delivery-button" type="submit">Отправить</button>
+            <button class="button-pink delivery-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -335,7 +371,7 @@
             <a class="contacts-phone" href="tel:+7812812-12-12">+7 (812) 812-12-12</a>
             <p class="contacts-phone-text">(с 10 до 20 ежедневно)</p>
           </adress>
-          <a class="feedback-form-button" href="#">Форма обратной связи</a>
+          <a class="button-pink feedback-form-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </div>
@@ -399,7 +435,32 @@
         2021</span>
     </section>
   </footer>
-
+ <div class="modal-container modal-container-close">
+   <div class="modal modal-feedback">
+     <button class="modal-close-button">
+       <span class="visually-hidden">Закрыть</span>
+     </button>
+     <section class="modal-content">
+       <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+       <p class="field-group">
+         <label class="visually-hidden" for="name">Ваши имя и фамилия.</label>
+         <input class="feedback-form-field field" type="text" id="name" name="name" placeholder="Имя и фамилия" required>
+       </p>
+       <p class="field-group">
+         <label class="visually-hidden" for="email">Введите ваш email.</label>
+         <input class="feedback-form-field field" placeholder="email@example.com" type="email" name="email"
+         id="email" required>
+        </p>
+        <p class="field-group">
+          <label class="visually-hidden" for="comment">Введите текст обращения.</label>
+          <textarea class="feedback-form-field comment-field field" name="comment" id="comment" rows="6" placeholder="В свободной форме" required></textarea>
+        </p>
+        <button class="button-pink modal-feedback-form-button" type="submit">Отправить</button>
+     </form>
+      </section>
+   </div>
+ </div>
 
 
 </body>
