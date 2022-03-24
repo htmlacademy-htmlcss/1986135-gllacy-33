@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Глейси</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+
 </head>
 
 <body class="main-page">
@@ -17,6 +19,25 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index/catalog.html">Каталог</a>
+          <ul class="subcatalog-item-list">
+            <li class="subcatalog-item">
+              <a class="subcatalog-item-link" href="#">Новинки</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subcatalog-item-link" href="#">Сливочное</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subcatalog-item-link subcatalog-item-link-chosen" href="#">Щербеты</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subcatalog-item-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subcatalog-item-link" href="#">Мелорин</a>
+            </li>
+          </ul>
+
+
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
@@ -42,9 +63,9 @@
             <div class="popover-content">
               <h2 class="visually-hidden">Поиск по сайту.</h2>
               <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-field field" type="search" placeholder="Поиск по сайту">
-            </form>
-            <span class="search-pointer"></span>
+                <input class="search-field field" type="search" placeholder="Поиск по сайту">
+              </form>
+              <span class="search-pointer"></span>
             </div>
           </div>
         </li>
@@ -56,19 +77,21 @@
               <form class="popover-auth-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="field-group">
                   <label class="visually-hidden" for="auth-email">Email.</label>
-                  <input class="auth-form-field field" type="email" id="auth-email" name="auth-email" placeholder="email@example.com">
+                  <input class="auth-form-field field" type="email" id="auth-email" name="auth-email"
+                    placeholder="email@example.com">
                 </p>
                 <p class="field-group">
                   <label class="visually-hidden" for="auth-password">Пароль.</label>
-                  <input class="auth-form-field field" type="password" name="auth-password" id="auth-password" placeholder="Пароль">
+                  <input class="auth-form-field field" type="password" name="auth-password" id="auth-password"
+                    placeholder="Пароль">
                 </p>
                 <div class="auth-form-user-options-wrapper">
-                <button class="button-pink auth-form-button" type="submit">Войти</button>
-                <p class="field-group auth-form-user-options">
-                <a class="auth-form-recovery" href="#">Забыли пароль?</a>
-                <a class="auth-form-registration" href="#">Регистрация</a>
-              </p>
-              </div>
+                  <button class="button-pink auth-form-button" type="submit">Войти</button>
+                  <p class="field-group auth-form-user-options">
+                    <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                    <a class="auth-form-registration" href="#">Регистрация</a>
+                  </p>
+                </div>
               </form>
             </div>
           </div>
@@ -99,7 +122,7 @@
           </div>
           <div class="slider">
             <button class="slider-button slider-prev-button" type="button">
-              <span class="visually-hidden">Предыдущее мороженое</span>
+              <span class="visually-hidden">Предыдущее мороженое.</span>
               <svg class="slider-button-icon" width="7" height="12" aria-hidden="true" focusable="false"
                 viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -113,34 +136,38 @@
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M1.1.9a.7.7 0 1 0-1 1L4.5 6 .2 10.2a.7.7 0 0 0 1 1l4.6-4.7c.3-.3.3-.7 0-1L1.1 1Z" /></svg>
 
-              <span class="visually-hidden">Следующее мороженое</span>
+              <span class="visually-hidden">Следующее мороженое.</span>
             </button>
             <img class="slider-image-next" src="images/products/slide-next-banana.png" width="100" height="150"
-              alt="Следующее мороженое">
+              alt="Следующее мороженое.">
             <img class="slider-image-next" src="images/products/slide-next-caramel.png" width="100" height="150"
-              alt="Следующее мороженое">
+              alt="Следующее мороженое.">
           </div>
         </div>
         <div class="slider-footer">
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото мороженого</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 фото мороженого</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 фото мороженого</span>
-              </button>
-            </li>
-          </ol>
+          <div class="slider-footer-block">
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото мороженого.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото мороженого.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото мороженого.</span>
+                </button>
+              </li>
+            </ol>
+
+          </div>
 
           <div class="slider-social">
+
             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link social-vk" href="https://vk.com/htmlacademy">
@@ -175,7 +202,7 @@
               </li>
             </ul>
           </div>
-
+        </div>
       </section>
       <section class="banners">
         <h2 class="banner-intro">Заказывайте мороженое и получайте подарки!</h2>
@@ -191,9 +218,8 @@
           </div>
           <div class="banner right-banner">
             <h3 class="banner-title">Маршмеллоу даром!</h3>
-            <p class="banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
-              совершенно
-              бесплатно.</p>
+            <p class="banner-description">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных
+              зефирок&nbsp;совершенно бесплатно.</p>
             <a class="button-light favour-button" href="catalog.html">Хочу подарок</a>
             <img class="banner-picture" src="images/products/marshmellow.png" width="232" height="249"
               alt="Маршмеллоу в вафельном рожке.">
@@ -213,9 +239,11 @@
               <div class="basket">
                 <span class="visually-hidden">Положить в корзину.</span>
                 <button class="product-basket-button" type="button">
-                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
-                    </svg>
+                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -230,9 +258,11 @@
               <div class="basket">
                 <span class="visually-hidden">Положить в корзину.</span>
                 <button class="product-basket-button" type="button">
-                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
-                    </svg>
+                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -247,9 +277,11 @@
               <div class="basket">
                 <span class="visually-hidden">Положить в корзину.</span>
                 <button class="product-basket-button" type="button">
-                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
-                    </svg>
+                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -264,9 +296,11 @@
               <div class="basket">
                 <span class="visually-hidden">Положить в корзину.</span>
                 <button class="product-basket-button" type="button">
-                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
-                    </svg>
+                  <svg class="basket-icon" width="17" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.31254 0.489586C0.944351 0.489586 0.645874 0.788063 0.645874 1.15625C0.645874 1.52444 0.944351 1.82292 1.31254 1.82292H3.37353L3.91319 4.5192C3.91612 4.538 3.91985 4.55654 3.92432 4.57479L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54045C16.3456 4.34528 16.2938 4.14368 16.1672 3.9906C16.0405 3.83751 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02541C4.51133 0.713843 4.23774 0.489586 3.91999 0.489586H1.31254ZM6.32068 9.75385L5.38566 5.08223H14.8477L13.9562 9.75686C13.9268 9.90268 13.8472 10.0336 13.7313 10.1269C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.1269C6.42978 10.0332 6.35 9.90146 6.32087 9.75481L6.32068 9.75385ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8755 6.5285 12.8755C7.25644 12.8755 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8755 13.6985 12.8755C14.4264 12.8755 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z" />
+                  </svg>
 
                 </button>
               </div>
@@ -276,7 +310,8 @@
       </section>
       <section class="advantages-container">
         <div class="advantages-wrapper">
-          <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
+          <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
+            собственного
             проиводства на развес</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -296,7 +331,8 @@
             <li class="advantages-item">
               <img class="advantages-image" src="images/icons/leaf-icon.svg" width="48" height="48"
                 alt="Схематичное изображение листа.">
-              <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
+              <p class="advantages-description">Для приготовления мороженого используются сливки и молоко
+                высочайшего
                 качества. Все ингредиенты
                 и&nbsp;добавки произведены из натурального сырья.</p>
             </li>
@@ -321,7 +357,8 @@
           <div class="newsletter-wrapper">
             <h3 class="visually-hidden">Подпишитесь на рассылку.</h3>
             <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+              в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой
+              ненужной ерунды.
               Честно =)</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
@@ -339,23 +376,53 @@
         </div>
         <div class="delivery">
           <h3 class="visually-hidden">Заполните форму доставки.</h3>
-          <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.
+          <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить
+            заказ.
           </p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="delivery-form-wrapper">
-            <p class="field-group delivery-form-date">
-              <label class="form-label" for="delivery-date">Дата</label>
-              <input class="field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
-            </p>
-            <p class="field-group delivery-form-phone">
-              <label class="form-label" for="delivery-phone">Телефон</label>
-              <input class="field" type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
-            </p>
-            <p class="field-group delivery-form-adress">
-              <label class="form-label" for="delivery-adress">Адрес</label>
-              <input class="field" type="text" name="delivery-adress" id="delivery-adress"
-                placeholder="ул. Большая Конюшенная, 19/8">
-            </p>
+            <div class="delivery-form-wrapper">
+              <p class="field-group delivery-form-date">
+                <span class="form-label">
+                  <label class="form-label" for="delivery-date">Дата</label>
+                </span>
+                <span class="tooltip tooltip-delivery-date">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg width="14" height="14" viewBox="0 0 14 14" aria-label="Подсказка." fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label"></span>
+                </span>
+
+                <input class="field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020"
+                  required>
+              </p>
+              <p class="field-group delivery-form-phone">
+
+                <label class="form-label" for="delivery-phone">Телефон</label>
+                <input class="field" type="text" name="delivery-phone" id="delivery-phone"
+                  placeholder="+7 800 999-00-00" required>
+              </p>
+              <p class="field-group delivery-form-adress">
+                <span class="form-label">
+                  <label class="form-label" for="delivery-adress">Адрес</label>
+                </span>
+                <span class="tooltip tooltip-delivery-adress">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-adress">
+                    <svg width="14" height="14" viewBox="0 0 14 14" aria-label="Подсказка." fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-adress">Введите название
+                    улицы,&nbsp;дома&nbsp;и&nbsp;квартиры</span>
+                </span>
+                <input class="field" type="text" name="delivery-adress" id="delivery-adress"
+                  placeholder="ул. Большая Конюшенная, 19/8" required>
+              </p>
             </div>
             <button class="button-pink delivery-button" type="submit">Отправить</button>
           </form>
@@ -364,14 +431,15 @@
       <section class="contacts-container">
         <div class="contacts-wrapper">
           <h2 class="visually-hidden">Контакты и форма обратной связи.</h2>
-          <adress class="contacts-adress">
+          <div class="contacts-adress">
             <h3 class="contacts-subtitle">Адрес главного офиса и&nbsp;офлайн-магазина:</h3>
             <p class="contacts-adress-text">наб. реки Карповки, 5&nbsp;лит&nbsp;П, Санкт-Петербург</p>
             <h3 class="contacts-subtitle">Для заказов по телефону:</h3>
             <a class="contacts-phone" href="tel:+7812812-12-12">+7 (812) 812-12-12</a>
             <p class="contacts-phone-text">(с 10 до 20 ежедневно)</p>
-          </adress>
+
           <a class="button-pink feedback-form-button" href="#">Форма обратной связи</a>
+        </div>
         </div>
       </section>
     </div>
@@ -382,7 +450,11 @@
       <ul class="social-list social-list-footer">
         <li class="social-item">
           <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.4 3h-.7s-1.6 0-3-1.2C7.4 12.4 6 9.6 6 9.6v-.2l.4-.1h2l.1.2.7 1.2c.7 1 1 1.3 1.3 1.2.3-.2.2-1.5.2-1.5s0-.5-.2-.7c-.1-.2-.4-.3-.5-.3 0 0 0-.2.3-.3l1.5-.1h.8c.5.2.5.5.4 1.1V11c0 .4 0 .8.2 1 .2 0 .5 0 1.3-1.3l.7-1.2.1-.2h2.1l.6.1c0 .3-.2.8-1 1.6-.7.9-1 1.2-1 1.4 0 .2.3.4.7.7l1.2 1.2c.4.6-.4.7-.4.7h-1.7l-.7-.2a4 4 0 0 1-.7-.6c-.4-.4-.7-.7-1-.6-.4.1-.4 1-.4 1v.2l-.4.2Z" fill="#FCFCFC"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.4 3h-.7s-1.6 0-3-1.2C7.4 12.4 6 9.6 6 9.6v-.2l.4-.1h2l.1.2.7 1.2c.7 1 1 1.3 1.3 1.2.3-.2.2-1.5.2-1.5s0-.5-.2-.7c-.1-.2-.4-.3-.5-.3 0 0 0-.2.3-.3l1.5-.1h.8c.5.2.5.5.4 1.1V11c0 .4 0 .8.2 1 .2 0 .5 0 1.3-1.3l.7-1.2.1-.2h2.1l.6.1c0 .3-.2.8-1 1.6-.7.9-1 1.2-1 1.4 0 .2.3.4.7.7l1.2 1.2c.4.6-.4.7-.4.7h-1.7l-.7-.2a4 4 0 0 1-.7-.6c-.4-.4-.7-.7-1-.6-.4.1-.4 1-.4 1v.2l-.4.2Z"
+                fill="#FCFCFC" /></svg>
             <span class="visually-hidden">В контакте.</span>
           </a>
         </li>
@@ -427,6 +499,7 @@
       </ul>
     </section>
     <section class="htmlacademy-logo">
+      <h2 class="visually-hidden">Логотип htmlacademy.</h2>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <img class="htmlacademy-image" src="images/logo/logo_htmlacademy.svg" width="93" height="27"
           alt="Логотип HTMLacademy.">
@@ -435,32 +508,34 @@
         2021</span>
     </section>
   </footer>
- <div class="modal-container modal-container-close">
-   <div class="modal modal-feedback">
-     <button class="modal-close-button">
-       <span class="visually-hidden">Закрыть</span>
-     </button>
-     <section class="modal-content">
-       <h2 class="modal-title">Мы обязательно ответим вам!</h2>
-     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-       <p class="field-group">
-         <label class="visually-hidden" for="name">Ваши имя и фамилия.</label>
-         <input class="feedback-form-field field" type="text" id="name" name="name" placeholder="Имя и фамилия" required>
-       </p>
-       <p class="field-group">
-         <label class="visually-hidden" for="email">Введите ваш email.</label>
-         <input class="feedback-form-field field" placeholder="email@example.com" type="email" name="email"
-         id="email" required>
-        </p>
-        <p class="field-group">
-          <label class="visually-hidden" for="comment">Введите текст обращения.</label>
-          <textarea class="feedback-form-field comment-field field" name="comment" id="comment" rows="6" placeholder="В свободной форме" required></textarea>
-        </p>
-        <button class="button-pink modal-feedback-form-button" type="submit">Отправить</button>
-     </form>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-feedback">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="visually-hidden" for="name">Ваши имя и фамилия.</label>
+            <input class="feedback-form-field field" type="text" id="name" name="name" placeholder="Имя и фамилия"
+              required>
+          </p>
+          <p class="field-group">
+            <label class="visually-hidden" for="email">Введите ваш email.</label>
+            <input class="feedback-form-field field" placeholder="email@example.com" type="email" name="email"
+              id="email" required>
+          </p>
+          <p class="field-group">
+            <label class="visually-hidden" for="comment">Введите текст обращения.</label>
+            <textarea class="feedback-form-field comment-field field" name="comment" id="comment" rows="6"
+              placeholder="В свободной форме" required></textarea>
+          </p>
+          <button class="button-pink modal-feedback-form-button" type="submit">Отправить</button>
+        </form>
       </section>
-   </div>
- </div>
+    </div>
+  </div>
 
 
 </body>
