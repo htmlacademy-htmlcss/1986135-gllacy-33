@@ -20,23 +20,23 @@
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
           <div class="subcatalog-wrapper">
-          <ul class="subcatalog-item-list">
-            <li class="subcatalog-item">
-              <a class="subcatalog-item-link" href="#">Новинки</a>
-            </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-item-link" href="#">Сливочное</a>
-            </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-item-link subcatalog-item-link-chosen" href="#">Щербеты</a>
-            </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-item-link" href="#">Фруктовый лед</a>
-            </li>
-            <li class="subcatalog-item">
-              <a class="subcatalog-item-link" href="#">Мелорин</a>
-            </li>
-          </ul>
+            <ul class="subcatalog-item-list">
+              <li class="subcatalog-item">
+                <a class="subcatalog-item-link" href="#">Новинки</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-item-link" href="#">Сливочное</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-item-link subcatalog-item-link-chosen" href="#">Щербеты</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-item-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-item-link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </div>
 
 
@@ -65,15 +65,18 @@
             <div class="popover-content">
               <h2 class="visually-hidden">Поиск по сайту.</h2>
               <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="search-field field" type="search" placeholder="Поиск по сайту">
+                <input class="search-field field" type="text" placeholder="Поиск по сайту" required>
+                <button class="search-close-button" type="reset"></button>
               </form>
-              <span class="search-pointer"></span>
             </div>
           </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link log-in-link" href="#"> Вход</a>
           <div class="popover popover-auth">
+            <button class="auth-close-button" type="button">
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
             <div class="popover-content">
               <h2 class="popover-title">Личный кабинет</h2>
               <form class="popover-auth-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -94,8 +97,8 @@
                     <a class="auth-form-registration" href="#">Регистрация</a>
                   </p>
                 </div>
-              </form>
-            </div>
+          </form>
+          </div>
           </div>
         </li>
         <li class="navigation-item">
@@ -150,7 +153,8 @@
         <div class="slider_2-wrapper">
           <div class="slider-description">
             <h2 class="ice-cream-title">Сливочное мороженое со вкусом банана</h2>
-            <p class="ice-cream-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+            <p class="ice-cream-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+              наслаждение даже в самый жаркий летний день.</p>
             <a class="button-light order-button" href="index/catalog.html">Заказать</a>
           </div>
           <div class="slider">
@@ -182,7 +186,8 @@
           <div class="slider-description">
             <h2 class="ice-cream-title">Карамельный пломбир
               с маршмеллоу</h2>
-            <p class="ice-cream-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+            <p class="ice-cream-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+              сердца сладкоежек всех возрастов.</p>
             <a class="button-light order-button" href="index/catalog.html">Заказать</a>
           </div>
           <div class="slider">
@@ -277,7 +282,7 @@
             <p class="banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового
               варенья бесплатно.</p>
-            <a class="button-light favour-button" href="catalog.html">Хочу подарок</a>
+            <a class="button-light favour-button" href="catalog.html">Хочу&nbsp;подарок</a>
             <img class="banner-picture" src="images/products/raspberry.png" width="181" height="244"
               alt="Малина в вафельном рожке.">
           </div>
@@ -285,7 +290,7 @@
             <h3 class="banner-title">Маршмеллоу даром!</h3>
             <p class="banner-description">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных
               зефирок&nbsp;совершенно бесплатно.</p>
-            <a class="button-light favour-button" href="catalog.html">Хочу подарок</a>
+            <a class="button-light favour-button" href="catalog.html">Хочу&nbsp;подарок</a>
             <img class="banner-picture" src="images/products/marshmellow.png" width="232" height="249"
               alt="Маршмеллоу в вафельном рожке.">
           </div>
@@ -458,7 +463,7 @@
                         d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z" />
                     </svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label"></span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Дата, когда мы к Вам приедем=)</span>
                 </span>
 
                 <input class="field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020"
@@ -575,7 +580,7 @@
   </footer>
   <div class="modal-container modal-container-close">
     <div class="modal modal-feedback">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
